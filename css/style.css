@@ -1,0 +1,66 @@
+.calculator {
+  display: flex;
+  flex-flow: row wrap;
+  width: 337px;
+  overflow:hidden;
+  margin: 100px auto;
+  border-radius: 3px;
+	box-shadow:  0px 10px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  font: normal 25px Arial, sans-serif;
+}
+.display {
+  background-color: grey;
+  height: 80px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.display h2 {
+  float: right;
+  color: white;
+  padding-right: 10px;
+  
+}
+.clear {
+  position:absolute;
+  float: left;
+  cursor: pointer;
+  color: #aaa;
+  padding-top: 5px;
+  transition: all 0.2s ease;
+}
+.clear:hover {
+	color: white;
+  padding-left: 10px;
+}
+.child {
+  margin: auto;
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+}
+.child button {
+  color: white;
+  font: normal 25px Arial, sans-serif;
+  width: 66px;
+  height: 56px;
+  border-radius: 10px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  margin: 4px;
+  background: rgba(250,100,0,0.3);
+  cursor: pointer;
+  border-style: none;
+  outline: none;
+  transition: all 0.2s ease;
+  top: 0px;
+}
+
+.child button:hover {
+	background: rgba(255,255,255,0.8);
+	color: #333;
+}
+.child button:active {
+	box-shadow: 0px 0px rgba(0, 0, 0, 0.2);
+	top: 4px;
+}
